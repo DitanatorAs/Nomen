@@ -17,7 +17,7 @@ class ViewWindow
           button('← Back') { 
             stretchy false
             on_clicked do
-              @window.visible = false
+              @window.destroy
               MainMenu.new.show
             end
           }
